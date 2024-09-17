@@ -1,0 +1,15 @@
+html { 
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5%;
+    
+}
+
+img {
+    width: 650px;
+}
+
+p.Ingredients{
+    list-style-type:disc;
+    padding-left: 10px;
+}
