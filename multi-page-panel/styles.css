@@ -1,0 +1,153 @@
+html { 
+
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 18px;
+}
+
+p {
+    margin: 0;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+.lorem {
+
+    margin: 0 auto;
+    width: 960px;
+    
+}
+
+section {
+    margin: 0;
+}
+
+
+section > div {
+    margin: auto;
+    width: 960px;
+    padding-top: 48;
+}
+
+header {
+    
+    font-weight:bold;
+    text-align: center;
+    padding-bottom: 188px;
+    padding-top: 166px;
+    color: white;
+    background-image: url('https://e0.365dm.com/23/05/1600x900/skysports-west-ham-goal-michail-antonio_6152525.jpg?20230511215317');
+    background-size: cover;
+    
+}
+
+h1 { 
+    font-size: 4.5rem;
+    line-height: 1;
+    margin: 0 0 16px 0;
+}
+
+h2 {
+    font-size: 1.7rem;
+    line-height: 1;
+    margin: 0;
+    
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    
+    padding-bottom: 32px;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin: 0 0 7px 0;
+}
+
+
+.playerPhotos {
+    width: 400px;
+    height: 300px;
+
+    float: right;
+    margin: 1px .5px 30px 40px;
+    object-fit: cover;  
+    
+}
+
+.griddy img {
+
+    float: left;
+    width: 200px;
+    height: 150px;
+    margin: 0px 11px 0 .5px;
+}
+   
+
+.firstSection {
+  background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.secondSection {
+    background-color: lightblue;
+    padding-top: 40px;
+    padding-bottom: 24px;
+
+}
+
+.griddy {
+
+    gap: 30px;
+    display: flex;
+    
+}
+
+
+.griddy ul {
+    list-style-type: none;
+
+    width: 450px;
+
+    padding: 0;
+    margin-top: 0;
+}
+
+.griddy li {
+ 
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.lastSection {
+    background-color: white;
+    padding-top: 38px ;
+    padding-bottom: 100px;
+}
+
+.lastSection p{
+    font-size: 1.4rem;
+    margin: 0;
+    line-height: 1.4;
+    
+}
+
+.lastParagraph {
+    text-align: center;
+    width: 695px;
+    margin: 0 auto;
+}
+
+.copyright {
+    background-color: lightblue;
+    padding: 40px 0;
+}
+
+
+    
+
+
