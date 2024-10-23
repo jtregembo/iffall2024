@@ -1,0 +1,147 @@
+html, body {
+    background-color: white;
+
+    font-family: "Lato", sans-serif;
+    line-height: 1.8;
+    color: black;
+
+    margin: 2%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2, h5 {
+    text-align: center;
+}
+
+img {
+    width: 550px;
+    height: 375px;
+}
+
+.topImage {
+    width: 100%;
+
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    display: block;
+    margin: 0 auto;
+    padding: 0; 
+    border-radius: 15px;
+}
+
+.bottomImages {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; /* !! space between images, needs to match up with space between boxes */
+    margin-top: 20px; /
+}
+
+.bottomImages img {
+    width: 48%; /* equal width */
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 15px; 
+}
+
+.Directions {
+    margin: auto;
+    width: 900px;
+    }
+
+p.description {
+    margin: auto;
+    width: 900px;
+}
+
+/* Ingredients and Materials boxes */
+.turqoiseBoxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+.box {
+    background-color: rgb(117, 151, 147);
+    padding: 20px;
+    width: 85%; 
+    border-radius: 15px; 
+}
+
+p.Ingredients, p.Materials {
+    color: white;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+
+}
+
+
+
+@media (max-width: 900px) {
+    .turqoiseBoxes, .bottomImages {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .box, .bottomImages img {
+        width: 95%; 
+        margin-bottom: 20px; 
+    }
+
+    .description, .Directions {
+        max-width: 95%; /* no overflow line */
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .topImage {
+        height: auto;
+        width: 100%;
+    }
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    .description, .Directions {
+        max-width: 95%;
+    }
+    .box, .bottomImages img {
+        width: 95%;
+    }
+}
+
+@media (min-width: 900px) {
+    .topImage {
+        max-width: 900px;
+        margin: 0 auto; 
+    }
+}
+
