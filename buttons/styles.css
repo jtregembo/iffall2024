@@ -379,7 +379,7 @@ a#btn_npr.logo {
 }
 
 a#btn_npr:hover .logo {
-    content: url("buttons/NPR-logo.png");
+    content: url("./images/NPR-logo.png");
     transform: scale(1.3);
 }
 
