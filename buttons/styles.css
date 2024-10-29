@@ -170,24 +170,20 @@ a#btn_apple:hover {
 }
 
 /* Lyft */
-a#btn_lyft {
-    display: block;
-    width: 100px;
-    height: 100px;
-    box-sizing: border-box;
-    border-radius: 50px;
-    margin: auto;
-    margin-top: 75px;
-    padding-top: 8px;
-    background-color: #232f3e;
-    color: #fff;
-    text-align: center;
-    font-size: 60px;
-    transition: all .2s;
-}
+a#btn_lyft > .logo {
+    margin-top: 70px;
+    width: 60%;
+    height: auto;
+    position: relative;
+    overflow-x: hidden; 
+    transition: all 0.3s;
 
-a#btn_lyft:hover {
-    background-color: #fc9a18;
+}
+a#btn_lyft:hover .logo{
+    transform: scale(.6);
+}
+a#btn_lyft:active .logo{
+    transform: scale(4);
 }
 
 /* Instagram */
@@ -268,91 +264,100 @@ a#btn_nike:hover .logo {
 
 /* Tesla */
 a#btn_tesla {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     width: 200px;
     height: 200px;
-    box-sizing: border-box;
-    border-radius: 50px;
+    border-radius: 100px; 
     margin: auto;
-    margin-top: 35px;
-    padding-top: 8px;
-    background-color: #232f3e;
-    color: #fff;
+    margin-top: 30px;
+    background-color: white;
     text-align: center;
-    font-size: 60px;
-    transition: all .2s;
+    position: relative;
+    transition: background-color 0.4s; 
 }
-    
+
+a#btn_tesla > .logo {
+    width: 80% !important;
+    height: 80% !important;
+    object-fit: contain !important;
+    transition: transform 0.7s !important;
+   
+}
 
 a#btn_tesla:hover {
-    background-color: #fc9a18;
+    background-color: black;
+}
+a#btn_tesla:active {
+    background-color: black;
+    animation: spin 1s linear infinite;
 }
 
-/* Fitbit */
-a#btn_fitbit {
-    display: block;
-    width: 100px;
-    height: 100px;
-    box-sizing: border-box;
-    border-radius: 50px;
-    margin: auto;
-    margin-top: 75px;
-    padding-top: 8px;
-    background-color: #232f3e;
-    color: #fff;
-    text-align: center;
-    font-size: 60px;
-    transition: all .2s;
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
-    
 
-a#btn_fitbit:hover {
-    background-color: #fc9a18;
+
+/* Fitbit  */
+a#btn_fitbit > .logo {
+    margin-top: 70px;
+    width: 80%;
+    height: auto;
+    position: relative;
+}
+
+a#btn_fitbit:hover > .logo {
+    animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {transform: translate(0, 0);}
+    25% {transform: translate(40px, -40px); }
+    50% {transform: translate(-40px, -50px);}
+    75% { transform: translate(30px, 50px); /}
+    100% {transform: translate(-30px, -60px);}
 }
 
 /* NYer */
 a#btn_newyorker {
-    display: block;
-    width: 200px; /* Wider width for a rectangular shape */
-    height: 80px; /* Reduced height for a rectangular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 200px;
+    height: 80px; 
     margin: auto;
-    margin-top: 60px;
+    margin-top: 90px;
     background-color: white;
-    border: 2px solid black; /* Black border */
+    border: 2px solid red;
+    border-radius: 15px;
     text-align: center;
     position: relative;
-    transition: background-color 0.3s; /* Smooth color transition on hover */
-    overflow: hidden;
+    transition: background-color 0.4s; 
 }
 
-/* Hover effect: change background to red */
+a#btn_newyorker.logo {
+    width: 150% !important;
+    height: 150% !important;
+    object-fit: contain;
+    transition: transform 0.7s;
+}
+
 a#btn_newyorker:hover {
     background-color: red;
+    border-radius: 15px;
 }
 
-/* Active state: flip pages animation */
 a#btn_newyorker:active {
-    animation: flip-pages 0.7s linear;
+    animation: page-flip 0.8s infinite;
 }
 
-@keyframes flip-pages {
-    0% {
-        transform: rotateY(0);
-    }
-    25% {
-        transform: rotateY(90deg);
-    }
-    50% {
-        transform: rotateY(180deg);
-    }
-    75% {
-        transform: rotateY(270deg);
-    }
-    100% {
-        transform: rotateY(360deg);
-    }
+@keyframes page-flip {
+    0% {transform: rotateY(0);}
+    50% {transform: rotateY(180deg); }
+    100% {transform: rotateY(360deg);}
 }
-
 
 
 /* NPR */
@@ -374,7 +379,7 @@ a#btn_npr.logo {
 }
 
 a#btn_npr:hover .logo {
-    content: url("/Users/jaxon/Downloads/NPR-logo.png");
+    content: url("buttons/NPR-logo.png");
     transform: scale(1.3);
 }
 
