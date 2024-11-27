@@ -1,0 +1,418 @@
+/* Everything & Body */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    background-color: #f8f5ec;
+    color: #333;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f5ec;
+}
+
+.design .header {
+    background-color: #dec2a2;
+}
+.basics .header {
+    background-color: #f8f5ec;
+}
+
+.global .header {
+    background-color: #f8f5ec;
+}
+
+.implications .header {
+    background-color: #dec2a2;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+.nav a.active {
+    font-weight: 900;
+}
+
+/* Hero Section for Homepage and Interior Pages */
+.hero {
+    
+    display: flex;
+    width: 100%;
+    margin: 0;
+    align-items: flex-end;
+    padding: 40px;
+    background-color: #f8f5ec;
+}
+
+.hero-image {
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1rem;
+}
+
+.design .hero {
+    background-color: #dec2a2; 
+    padding-bottom: 80px;
+}
+
+.basics .hero {
+    background-color: #f8f5ec; 
+    padding-bottom: 40px;
+}
+
+.basics .hero {
+    background-color: #f8f5ec; 
+    padding-bottom: 40px;
+}
+
+.global .hero {
+    background-color: #f8f5ec; 
+    padding-bottom: 40px;
+}
+
+.implications .hero {
+    background-color: #dec2a2; 
+    padding-bottom: 80px;
+}
+
+
+/* Main Content Styles */
+.text-and-image {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+    font-size: 1rem;
+}
+
+.design .text {
+    flex: 0.5;
+    font-size: 1rem;
+}
+
+.basics .text {
+    flex: 0.5;
+    font-size: 1rem;
+}
+
+.global .text {
+    flex: 0.5;
+    font-size: 1rem;
+}
+
+.implications .text {
+    flex: 0.5;
+    font-size: 1rem;
+}
+
+.image {
+    flex: 1;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 200px;
+    left: 220px; 
+    font-size: 2rem;
+    color: white; 
+    background-color: transparent; /* Remove the background box */
+    padding: 0; /* Remove padding */
+    border-radius: 0; 
+}
+
+
+/* Green Section for design Page */
+.design .green-section {
+    background-color: #4b6b48;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.design  .image-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.design .image-row img {
+    width: 35%;
+    border-radius: 10px;
+}
+
+.design  .green-section p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Green Section for global Page */
+.global .green-section {
+    background-color: #4b6b48;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.global .image-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.global .image-row img {
+    width: 35%;
+    border-radius: 10px;
+}
+
+.global .green-section p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Final Content Section */
+.final-content {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+}
+
+
+
+.text-column {
+    flex: 1;
+    font-size: 1rem;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f8f5ec;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.design .footer {
+   background-color:  #dec2a2;
+}
+
+.basics .footer {
+    padding-top: 0px;
+    background-color:  #f8f5ec;
+ }
+
+ .basics .footer {
+    padding-top: 0px;
+    background-color:  #f8f5ec;
+ }
+
+ .implications .footer {
+    background-color:  #dec2a2;
+ }
+
+
+/* About Section */
+.about {
+    background-color: #e4d6c5; 
+    padding: 50px 20px;
+    width: 100%;
+    margin: 0;
+    display: flex; 
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    text-align: left; /* Center text inside */
+}
+
+.about-content {
+    max-width: 800px; 
+}
+.about h2, .main-content h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.item-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 20px;
+ 
+}
+
+.item-text h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item-text p {
+    max-width: 500px;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 15px; /* Space between content and the line */
+    border-bottom: 1px solid #000; /* Thin black line */
+}
+
+.item:last-child {
+    border-bottom: none; /* Remove the line after the last item */
+}
+
+.design .content {
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    margin: 40px;
+}
+
+.implications .content {
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    margin: 40px;
+}
+
+.basics .content {
+    padding-top: 0px; 
+    padding-bottom: 50px;
+    margin: 60px;
+    font-size: 1rem;
+}
+
+.global .content {
+    padding-top: 0px; 
+    padding-bottom: 50px;
+    margin: 0px;
+    font-size: 1rem;
+}
+
+.basics .key-features {
+    border-top: 1px solid #000; 
+    padding-top: 60px; 
+    margin-top: 0px; 
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.basics .key-features ul {
+    border-bottom: 1px solid #000; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px;
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.basics .final-content {
+    border-bottom: 1px solid #000; 
+    padding-bottom: 60px; 
+    margin-bottom: 0px; 
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.global .key-features {
+    border-top: 1px solid #000; 
+    padding-top: 60px;
+    margin-top: 0px; 
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.global .key-features ul {
+  
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.global .final-content {
+    border-bottom: 1px solid #000; 
+    padding-top: 60px;
+    padding-bottom: 60px; 
+    margin-bottom: 0px; 
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
