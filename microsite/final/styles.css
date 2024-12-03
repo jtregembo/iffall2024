@@ -1,0 +1,529 @@
+/* ALL OF IT */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    background-color: #f8f5ec;
+    color: #333;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* HOME PAGE PRIMARILY & ALL PAGES */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f5ec;
+}
+
+/* all nav stuff*/
+.home-button {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+.nav a.active {
+    font-weight: 900;
+}
+/* intro section */
+/* home page */
+.intro {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    align-items: flex-end;
+    padding: 40px;
+    background-color: #f8f5ec;
+}
+.intro-image {
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+.intro-text {
+    max-width: 50%;
+}
+.intro-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.intro-text p {
+    font-size: 1rem;
+}
+/* the bulk of the text */
+.text {
+    flex: 1;
+    font-size: 1rem;
+}
+.text-and-image {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+/*photos*/
+.image {
+    flex: 1;
+    position: relative;
+}
+.image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* broken down as a dif section of text on basics/global/design pg */
+.final-content { /*renaaaame*/
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+}
+.text-column {
+    flex: 1;
+    font-size: 1rem;
+}
+/*only home page*/
+.about { 
+    background-color: #e4d6c5; 
+    padding: 50px 20px;
+    width: 100%;
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: left; 
+}
+.about-content { /* rename this bih*/
+    max-width: 800px; 
+}
+.about h2, .main-content h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+/*numbers corresponding to ip -- might not need this version */
+.item-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.item-text h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.item-text p {
+    max-width: 500px;
+}
+.item { /*the paaaaaiiinful black lines*/
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 15px; /* Space between content and the line */
+    border-bottom: 1px solid #000; /* Thin black line im workin with*/
+}
+.item:last-child {
+    border-bottom: none; /* Removin the line after last bit of text */
+}
+/*all footer stuff*/
+.footer {
+    background-color: #f8f5ec;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.footer-info p { /*should fix formatting bs */
+    margin: 5px 0;
+}
+.footer a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/*reorganized for final to make responsive design easy on myself 
+-- double check to make sure nothin got fucked up*/
+
+/* BASICS PAGE */
+.basics .header {
+    background-color: #dec2a2;
+}
+.basics .intro {
+    background-color: #dec2a2; 
+    padding-bottom: 80px;
+}
+.basics .text {
+    flex: 0.5;
+    font-size: 1rem;
+}
+.basics .footer {
+    background-color:  #dec2a2;
+ }
+ .basics .content { /*rename*/
+    padding-top: 0px; 
+    padding-bottom: 50px;
+    margin: 60px;
+    font-size: 1rem;
+}
+/*rename*/
+.basics .key-features {
+    /*border-top: 1px solid #000; */
+    padding-top: 0px; 
+    margin-top: 0px; 
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.basics .key-features ul {
+    border-bottom: 1px solid #000; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px;
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+/*last section and rename*/
+.basics .final-content {
+    /*border-bottom: 1px solid #000; */
+    padding-bottom: 0px; 
+    margin-bottom: 0px; 
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/* GLOBAL PAGE */
+.global .header {
+    background-color: #dec2a2;
+}
+.global .intro {
+    background-color: #dec2a2; 
+    padding-bottom: 80px;
+}
+.global .text {
+    flex: 0.5;
+    font-size: 1rem;
+}
+
+/*NOTE: green-section not modified on its own so 
+it should be chill to have above original green 
+section from design page *double check */
+
+/* callout -- green section */
+.global .green-section {
+    background-color: #4b6b48;
+    color: white;
+    padding: 40px;
+    text-align: left;
+}
+.global .image-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.global .image-row img {
+    width: 35%;
+    border-radius: 10px;
+}
+.global .green-section p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.global .content { /*rename */
+    padding-top: 0px; 
+    padding-bottom: 50px;
+    margin: 0px;
+    font-size: 1rem;
+}
+/*rename all this shit */
+.global .key-features {
+    /*border-top: 1px solid #000; */
+    padding-top: 60px;
+    margin-top: 0px; 
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.global .key-features ul {
+    padding-bottom: 0px; 
+    margin-bottom: 20px; 
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+.global .final-content {
+   /* border-bottom: 1px solid #000; */
+    padding-top: 60px;
+    padding-bottom: 30px; 
+    margin-bottom: 0px; 
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.global .footer {
+    background-color:  #dec2a2;
+}
+
+/* CHALLENGES PAGE */
+.challenges .header {
+    background-color: #dec2a2;
+}
+.challenges .intro {
+    background-color: #f8f5ec; 
+    padding-bottom: 80px;
+}
+.challenges .footer {
+    background-color:  #dec2a2;
+ }
+
+/* DESIGN PAGE */
+.design .header {
+    background-color: #dec2a2;
+}
+.design .intro {
+    background-color: #dec2a2; 
+    padding-bottom: 80px;
+}
+.design .text {
+    flex: 0.5;
+    font-size: 1rem;
+}
+.design .green-section {
+    background-color: #4b6b48;
+    color: white;
+    padding: 40px;
+    text-align: left;
+}
+/* callout -- green section */
+.design  .image-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.design .image-row img {
+    width: 35%;
+    border-radius: 10px;
+}
+.design .green-section p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.design .content { /*rename -- and double check placement of this */
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    margin: 40px;
+}
+/*last section but rename */
+.design .final-content {
+    /* border-bottom: 1px solid #000; */
+     padding-top: 60px;
+     padding-bottom: 60px; 
+     margin-bottom: 0px; 
+     max-width: 1200px; 
+     margin-left: auto; 
+     margin-right: auto; 
+ }
+/*small singular fix*/
+#solar-panel-image {
+    max-width: 75%;
+    height: auto;
+}
+.design .footer {
+    background-color:  #dec2a2;
+}
+
+/* IMPLICATIONS PAGE */
+.implications .header {
+    background-color: #dec2a2;
+}
+.implications .intro {
+    background-color: #dec2a2; 
+    padding-bottom: 80px;
+}
+.implications .text {
+    flex: 0.5;
+    font-size: 1rem;
+}
+.implications .content { /*renameeeee*/
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    margin: 40px;
+}
+.implications .footer {
+    background-color:  #dec2a2;
+ }
+/*small singular fix*/
+#affordable {
+    max-width: 100%;
+    height: auto;
+}
+
+/* MEDIA QUERIES */
+/* ipad mini (768px + below) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center; 
+    }
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .intro-image {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .intro-text h1 {
+        font-size: 1.8rem;
+    }
+    .intro-text {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        padding: 0 10px; 
+    }
+    .intro-text p {
+        font-size: 1rem;
+        align-items: center;
+        text-align: left;
+    }
+    .text-and-image {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+    .text {
+        flex: 1;
+        font-size: 0.9rem;
+    }
+    .image img {
+        width: 100%;
+        max-width: none;
+    }
+    #solar-panel-image {
+        max-width: 100%;
+    }
+    .global .key-features {
+        padding: 60px 40px 0;
+    }
+    .green-section p {
+        text-align: left;
+        padding: 10px;
+    }
+    .footer {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+/* iphone xr (480px + below) */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        text-align: center; 
+    }
+    .nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .intro {
+        padding: 10px;
+    }
+    .intro-image {
+        width: 100%;
+    }
+    .intro-text h1 {
+        font-size: 1.5rem; 
+    }
+    .intro-text {
+        max-width: 100%;
+        width: 100%;
+        text-align: center; 
+        font-size: 0.9rem;
+        padding: 0 10px; 
+    }
+    .intro-text p {
+        font-size: 0.9rem;
+        align-items: center;
+        text-align: left; 
+    }
+    .text-and-image {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .text {
+        font-size: 0.8rem;
+        padding: 0 10px;
+    }
+    .image img {
+        width: 100%;
+        max-width: none;
+    }
+    #solar-panel-image {
+        max-width: 100%;
+    }
+    /* fixed global page problem here*/
+    .global .key-features {
+        padding: 60px 40px 0;
+    }
+    /* to stack the boxes since they so long */
+    .final-content {
+        flex-direction: column; 
+    }
+    .final-content .text-column {
+        width: 100%; 
+    }
+    .basics .final-content {
+        width: 100%;
+        padding: 0; 
+        margin: 0; 
+        box-sizing: border-box; 
+    }
+    .basics .final-content .text-column {
+        width: 100%; 
+        margin: 0; 
+    }
+    .footer {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+    /* hide images */
+    .design .green-section img, .global .green-section img {
+        display: none; 
+    }
+}
