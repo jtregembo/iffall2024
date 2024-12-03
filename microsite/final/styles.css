@@ -14,7 +14,6 @@ body {
 }
 
 /* HOME PAGE PRIMARILY & ALL PAGES */
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -74,7 +73,7 @@ body {
     flex: 1;
     font-size: 1rem;
 }
-.text-and-image {
+.cuerpo {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -90,17 +89,17 @@ body {
 }
 
 /* broken down as a dif section of text on basics/global/design pg */
-.final-content { /*renaaaame*/
+.last-last { 
     display: flex;
     gap: 20px;
     padding: 40px;
 }
-.text-column {
+.columna {
     flex: 1;
     font-size: 1rem;
 }
 /*only home page*/
-.about { 
+.spine { 
     background-color: #e4d6c5; 
     padding: 50px 20px;
     width: 100%;
@@ -110,28 +109,28 @@ body {
     align-items: center;
     text-align: left; 
 }
-.about-content { /* rename this bih*/
+.spine-content { 
     max-width: 800px; 
 }
-.about h2, .main-content h2 {
+.spine h2, .all h2 {
     font-size: 2rem;
     margin-bottom: 30px;
 }
 /*numbers corresponding to ip -- might not need this version */
-.item-number {
+.IPnumber {
     font-size: 1.5rem;
     font-weight: bold;
     margin-right: 20px;
 }
-.item-text h3 {
+.IPtext h3 {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
-.item-text p {
+.IPtext p {
     max-width: 500px;
 }
-.item { /*the paaaaaiiinful black lines*/
+.IP { /*the paaaaaiiinful black lines*/
     display: flex;
     align-items: flex-start;
     gap: 20px;
@@ -139,7 +138,7 @@ body {
     padding-bottom: 15px; /* Space between content and the line */
     border-bottom: 1px solid #000; /* Thin black line im workin with*/
 }
-.item:last-child {
+.IP:last-child {
     border-bottom: none; /* Removin the line after last bit of text */
 }
 /*all footer stuff*/
@@ -182,14 +181,14 @@ body {
 .basics .footer {
     background-color:  #dec2a2;
  }
- .basics .content { /*rename*/
+ .basics .theGoods {
     padding-top: 0px; 
     padding-bottom: 50px;
     margin: 60px;
     font-size: 1rem;
 }
-/*rename*/
-.basics .key-features {
+
+.basics .listSection { /* this grouping only used on basics and global*/
     /*border-top: 1px solid #000; */
     padding-top: 0px; 
     margin-top: 0px; 
@@ -197,7 +196,7 @@ body {
     margin-left: auto; 
     margin-right: auto; 
 }
-.basics .key-features ul {
+.basics .listSection ul {
     border-bottom: 1px solid #000; 
     padding-bottom: 10px; 
     margin-bottom: 20px;
@@ -205,8 +204,8 @@ body {
     margin-left: auto; 
     margin-right: auto; 
 }
-/*last section and rename*/
-.basics .final-content {
+/*last section*/
+.basics .last-last {
     /*border-bottom: 1px solid #000; */
     padding-bottom: 0px; 
     margin-bottom: 0px; 
@@ -233,7 +232,7 @@ it should be chill to have above original green
 section from design page *double check */
 
 /* callout -- green section */
-.global .green-section {
+.global .verde {
     background-color: #4b6b48;
     color: white;
     padding: 40px;
@@ -249,18 +248,18 @@ section from design page *double check */
     width: 35%;
     border-radius: 10px;
 }
-.global .green-section p {
+.global .verde p {
     max-width: 800px;
     margin: 0 auto;
 }
-.global .content { /*rename */
+.global .theGoods {
     padding-top: 0px; 
     padding-bottom: 50px;
     margin: 0px;
     font-size: 1rem;
 }
-/*rename all this shit */
-.global .key-features {
+
+.global .listSection {
     /*border-top: 1px solid #000; */
     padding-top: 60px;
     margin-top: 0px; 
@@ -268,14 +267,14 @@ section from design page *double check */
     margin-left: auto; 
     margin-right: auto; 
 }
-.global .key-features ul {
+.global .listSection ul {
     padding-bottom: 0px; 
     margin-bottom: 20px; 
     max-width: 1200px; 
     margin-left: auto; 
     margin-right: auto;
 }
-.global .final-content {
+.global .last-last {
    /* border-bottom: 1px solid #000; */
     padding-top: 60px;
     padding-bottom: 30px; 
@@ -312,7 +311,7 @@ section from design page *double check */
     flex: 0.5;
     font-size: 1rem;
 }
-.design .green-section {
+.design .verde {
     background-color: #4b6b48;
     color: white;
     padding: 40px;
@@ -329,17 +328,17 @@ section from design page *double check */
     width: 35%;
     border-radius: 10px;
 }
-.design .green-section p {
+.design .verde p {
     max-width: 800px;
     margin: 0 auto;
 }
-.design .content { /*rename -- and double check placement of this */
+.design .theGoods { /* double check placement of this */
     padding-top: 50px; 
     padding-bottom: 50px;
     margin: 40px;
 }
-/*last section but rename */
-.design .final-content {
+/*last section*/
+.design .last-last {
     /* border-bottom: 1px solid #000; */
      padding-top: 60px;
      padding-bottom: 60px; 
@@ -369,7 +368,7 @@ section from design page *double check */
     flex: 0.5;
     font-size: 1rem;
 }
-.implications .content { /*renameeeee*/
+.implications .theGoods { 
     padding-top: 50px; 
     padding-bottom: 50px;
     margin: 40px;
@@ -385,7 +384,7 @@ section from design page *double check */
 
 /* MEDIA QUERIES */
 /* ipad mini (768px + below) */
-@media (max-width: 768px) {
+@media (max-width: 912px) {
     .header {
         flex-direction: column;
         align-items: center;
@@ -420,7 +419,7 @@ section from design page *double check */
         align-items: center;
         text-align: left;
     }
-    .text-and-image {
+    .cuerpo {
         flex-direction: column;
         gap: 20px;
         padding: 0 10px;
@@ -436,10 +435,10 @@ section from design page *double check */
     #solar-panel-image {
         max-width: 100%;
     }
-    .global .key-features {
+    .global .listSection {
         padding: 60px 40px 0;
     }
-    .green-section p {
+    .verde p {
         text-align: left;
         padding: 10px;
     }
@@ -482,7 +481,7 @@ section from design page *double check */
         align-items: center;
         text-align: left; 
     }
-    .text-and-image {
+    .cuerpo {
         flex-direction: column;
         gap: 10px;
     }
@@ -498,23 +497,23 @@ section from design page *double check */
         max-width: 100%;
     }
     /* fixed global page problem here*/
-    .global .key-features {
+    .global .listSection {
         padding: 60px 40px 0;
     }
     /* to stack the boxes since they so long */
-    .final-content {
+    .last-last {
         flex-direction: column; 
     }
-    .final-content .text-column {
+    .last-last .columna {
         width: 100%; 
     }
-    .basics .final-content {
+    .basics .last-last {
         width: 100%;
         padding: 0; 
         margin: 0; 
         box-sizing: border-box; 
     }
-    .basics .final-content .text-column {
+    .basics .last-last .columna {
         width: 100%; 
         margin: 0; 
     }
@@ -523,7 +522,7 @@ section from design page *double check */
         padding: 10px;
     }
     /* hide images */
-    .design .green-section img, .global .green-section img {
+    .design .verde img, .global .verde img {
         display: none; 
     }
 }
